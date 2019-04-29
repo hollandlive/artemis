@@ -1,0 +1,141 @@
+
+body, html{
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	height: 100%;
+}
+
+.bg {
+	background: url("bg.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+	position: relative;
+}
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 100px;
+	background: #262626;
+	width: 100%;
+	box-sizing: border-box;
+	height: 100px;
+	max-height: 100px;
+}
+header .logo{
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.4rem;
+	float: left;
+	font-weight: bold;
+	margin-top: 50px;
+
+}
+
+header nav{
+	float:right;
+	margin-top: 50px;
+}
+
+header nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header nav ul li{
+	position: relative;
+	display: block;
+	list-style: none;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active{
+	/*border-bottom: 2px solid #663333;*/
+	background-color: #662233;
+}
+
+.menu-toggle{
+	color: yellow;
+	line-height: 50px;
+	font-size: 24px;
+	margin-top: 50px;
+	float: right;
+	display: none;
+}
+
+.btn-more-toggle{
+	color: #fff;
+	line-height: 50px;
+	font-size: 44px;
+	position:absolute;
+	 bottom: 5%;
+	 right:50%;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	text-align: center;
+}
+
+section h1{
+	font-size: 2.5rem;
+}
+
+section p{
+	font-size: 1.2rem;
+}
+
+section#companies {
+	background: rgba(204, 204, 204, 0.3);
+}
+
+
+
+@media (max-width:991px) {
+	header{
+		padding: 0 20px;
+	}
+	.menu-toggle{
+		display: block;
+	}
+	header nav{
+		/*display: none;*/
+		position: absolute;
+		width: 100%;
+		height: calc(100vh-50px);
+		background: #333;
+		top: 50px;
+		left: -100%;
+		transition: 1s;
+	}
+	header nav.active{
+		left: 0;
+	}
+
+	header nav ul{
+		display: block;
+	}
+
+	header nav ul li a{
+		border-bottom: 1px solid #663333;
+	}
+}
