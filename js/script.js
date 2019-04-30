@@ -1,11 +1,12 @@
-$(document).ready(function(){
-  $('.menu-toggle').click(function(){
-    $('nav').toggleClass('active')
+// $(document).ready(function(){
+   $('.menu-toggle').click(function(){
+     $('nav').toggleClass('active')
   })
+//
+//   $('.btn-more-toggle').click(function(){
+//     $('#about').toggleClass('scrolled')
+//   })
 
-  $('.btn-more-toggle').click(function(){
-    $('#about').toggleClass('scrolled')
-  })
 
   // $('.navbar a').on('click', function(e){
   //   if(this.hash !== '') {
@@ -21,4 +22,4 @@ $(document).ready(function(){
   //     });
   //   }
   // });
-})
+// })
