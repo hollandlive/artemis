@@ -145,6 +145,8 @@ section#companies {
 	display: none;
 } */
 
+/*about section*/
+
 
 @media (max-width:991px) {
 	header{
@@ -177,5 +179,10 @@ section#companies {
 
 	header nav ul li a{
 		border-bottom: 1px solid #663333;
+	}
+
+	.imageAbout {
+		max-width: 50%;
+		transition: 2s;
 	}
 }
