@@ -13,21 +13,23 @@ gulp.task('sass', function() {
 	return gulp.src(['./sass/*.scss'])
 		.pipe(sass())
 		.pipe(gulp.dest('./css/custom'))
-    //.pipe(browserSync.stream());
-		.pipe(browserSync.reload({stream: true}));
+    .pipe(browserSync.reload({stream: true}));
+		//.pipe(browserSync.reload({stream: true}));
 
 		//.pipe(sass().on('error', sass.logError))
 });
 
 //gulp.task('serve', function() {
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', function() {
 
-	browserSync.init({
-		server: './'
+  browserSync.init({
+		server: {
+			baseDir: './'
+		}
 	});
 
-	gulp.watch('./scss/*.scss', ['sass']);
-	gulp.watch('./*.html').on('change', browserSync.reload);
+	gulp.watch('./sass/*.scss', ['sass']);
+	gulp.watch('./**/*.index.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['serve']);
