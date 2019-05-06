@@ -2,6 +2,47 @@
 
 $myColor: #fff;
 
+
+
 body {
-  background: $myColor;
+  font-family: 'Raleway', sans-serif;
+  background: url("bg.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+	position: relative;
+
+  section {
+    #home {
+
+    }
+
+    #companies {
+
+    }
+
+    #portfolio {
+
+    }
+  }
+}
+
+
+
+
+h1 {
+  color: #665544;
+}
+
+
+section p{
+	font-size: 1.2rem;
+}
+.menuColumn {
+  display: none;
+}
+
+@media (max-width:991px) {
+  .menuTabs {
+    display: block;
+  }
 }

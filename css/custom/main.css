@@ -7021,4 +7021,21 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  background: #fff; }
+  font-family: 'Raleway', sans-serif;
+  background: url("bg.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+  position: relative; }
+
+h1 {
+  color: #665544; }
+
+section p {
+  font-size: 1.2rem; }
+
+.menuColumn {
+  display: none; }
+
+@media (max-width: 991px) {
+  .menuTabs {
+    display: block; } }
