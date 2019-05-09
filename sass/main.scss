@@ -6,26 +6,44 @@ $myColor: #fff;
 
 body {
   font-family: 'Raleway', sans-serif;
-  background: url("bg.jpg") no-repeat center;
-  background-size: cover;
-  height: 100%;
-	position: relative;
-
-  section {
-    #home {
-
-    }
-
-    #companies {
-
-    }
-
-    #portfolio {
-
-    }
-  }
+  line-height: 1.6;
+  height: 100vh;
+  font-size: 1.2rem;
 }
 
+.main {
+  height: 100%;
+  width: 100%;
+
+}
+
+.navbar {
+position: fixed;
+top: 0;
+width: 100%;
+
+}
+
+.navbar ul li a {
+display: flex;
+justify-content: center;
+text-transform: uppercase;
+}
+
+a.nav-link :hover {
+    color: #663333;
+}
+#home {
+	background: url("bg.jpg") no-repeat center;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+}
+
+section#companies {
+  background-color: #555;
+  height: 100vh;
+}
 
 
 
@@ -35,14 +53,18 @@ h1 {
 
 
 section p{
-	font-size: 1.2rem;
+
 }
 .menuColumn {
   display: none;
 }
 
 @media (max-width:991px) {
-  .menuTabs {
-    display: block;
+
+
+  .navbar ul a {
+  display:flex;
+  justify-content: center;
+
   }
 }
