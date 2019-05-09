@@ -3,17 +3,17 @@
 $myColor: #fff;
 
 
-
 body {
   font-family: 'Raleway', sans-serif;
-  line-height: 1.6;
   height: 100vh;
-  font-size: 1.2rem;
 }
 
 .main {
   height: 100%;
   width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 
 }
 
@@ -29,32 +29,69 @@ display: flex;
 justify-content: center;
 text-transform: uppercase;
 }
+//
+// .navbar ul li:hover {
+//     color: #663333;
+// }
 
-a.nav-link :hover {
-    color: #663333;
-}
-#home {
-	background: url("bg.jpg") no-repeat center;
-	background-size: cover;
-	height: 100vh;
-	position: relative;
-}
-
-section#companies {
-  background-color: #555;
+section {
   height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 150px;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  scroll-snap-align: center;
+  h1 {
+    font-size: 4rem;
+    color: #665544;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  &#home {
+  	background: url("bg.jpg") no-repeat center;
+  	background-size: cover;
+  	position: relative;
+    justify-content: flex-end;
+  }
+
+  &#about {
+    background-color: #663333;
+
+  }
+
+  &#skills {
+    background-color: #223456;
+  }
+
+  &#companies {
+    background-color: #555;
+  }
+
+  &#portfolio {
+    background-color: #442222;
+  }
+  &#blog {
+    background-color: #555666;
+  }
+
+  &#contact {
+    background-color: #456734;
+  }
+
+}
+.socilaIcons {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-
-
-h1 {
-  color: #665544;
-}
-
-
-section p{
-
-}
 .menuColumn {
   display: none;
 }

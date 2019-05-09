@@ -7022,13 +7022,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: 'Raleway', sans-serif;
-  line-height: 1.6;
-  height: 100vh;
-  font-size: 1.2rem; }
+  height: 100vh; }
 
 .main {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; }
 
 .navbar {
   position: fixed;
@@ -7040,21 +7041,46 @@ body {
   justify-content: center;
   text-transform: uppercase; }
 
-a.nav-link :hover {
-  color: #663333; }
-
-#home {
-  background: url("bg.jpg") no-repeat center;
-  background-size: cover;
+section {
   height: 100vh;
-  position: relative; }
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 150px;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  scroll-snap-align: center; }
+  section h1 {
+    font-size: 4rem;
+    color: #665544; }
+  section p {
+    font-size: 1.2rem;
+    line-height: 1.6; }
+  section#home {
+    background: url("bg.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    justify-content: flex-end; }
+  section#about {
+    background-color: #663333; }
+  section#skills {
+    background-color: #223456; }
+  section#companies {
+    background-color: #555; }
+  section#portfolio {
+    background-color: #442222; }
+  section#blog {
+    background-color: #555666; }
+  section#contact {
+    background-color: #456734; }
 
-section#companies {
-  background-color: #555;
-  height: 100vh; }
-
-h1 {
-  color: #665544; }
+.socilaIcons {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0; }
 
 .menuColumn {
   display: none; }
