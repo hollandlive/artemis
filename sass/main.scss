@@ -60,27 +60,32 @@ section {
   }
 
   &#about {
-    background-color: #663333;
-
+    background-color: #fff;
+    display: block;
   }
 
   &#skills {
     background-color: #223456;
+    display: block;
   }
 
   &#companies {
     background-color: #555;
+    display: block;
   }
 
   &#portfolio {
     background-color: #442222;
+    display: block;
   }
   &#blog {
     background-color: #555666;
+    display: block;
   }
 
   &#contact {
     background-color: #456734;
+    
   }
 
 }
@@ -96,6 +101,9 @@ section {
   display: none;
 }
 
+section.about1, section.about2 {
+
+}
 @media (max-width:991px) {
 
 
