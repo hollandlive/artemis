@@ -7031,16 +7031,6 @@ body {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory; }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%; }
-
-.navbar ul li a {
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase; }
-
 section {
   height: 100vh;
   display: flex;
@@ -7061,7 +7051,8 @@ section {
     background: url("bg.jpg") no-repeat center;
     background-size: cover;
     position: relative;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    display: none; }
   section#about {
     background-color: #fff;
     display: block; }
